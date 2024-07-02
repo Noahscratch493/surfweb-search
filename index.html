@@ -1,120 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SurfWeb</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://h2.gifposter.com/bingImages/LesBravesNormandy_1920x1080.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurfWeb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://h2.gifposter.com/bingImages/LesBravesNormandy_1920x1080.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
 
-.navbar {
-    background-color: rgba(51, 51, 51, 0.5); /* Half transparent */
-    overflow: hidden;
-}
+        .navbar {
+            background-color: rgba(51, 51, 51, 0.5); /* Half transparent */
+            overflow: hidden;
+        }
 
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-.container {
-    max-width: 800px;
-    margin: 100px auto;
-    text-align: center;
-}
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            text-align: center;
+        }
 
-.logo {
-    width: 300px;
-    margin-bottom: 40px;
-}
+        .logo {
+            width: 300px;
+            margin-bottom: 40px;
+        }
 
-.footer {
-    background-color: rgba(51, 51, 51, 0.5); /* Half transparent */
-    color: #fff;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: none;
-}
+        .footer {
+            background-color: rgba(51, 51, 51, 0.5); /* Half transparent */
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: none;
+        }
 
-.footer a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-}
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
 
-.show-hide-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px;
-    background-color: rgba(51, 51, 51, 0.5); /* Half transparent */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    z-index: 9999;
-}
-
-</style>
+        .show-hide-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: rgba(51, 51, 51, 0.5); /* Half transparent */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.98244" height="65.98244" viewBox="0,0,65.98244,65.98244"><defs><linearGradient x1="241.3888" y1="151.25" x2="241.3888" y2="208.75" gradientUnits="userSpaceOnUse" id="color-1"><stop offset="0" stop-color="#00b5ff"/><stop offset="1" stop-color="#0083ff"/></linearGradient></defs><g transform="translate(-208.2444,-146.76165)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M208.2444,179.75287c0,-18.22055 14.77067,-32.99122 32.99122,-32.99122c18.22055,0 32.99122,14.77067 32.99122,32.99122c0,18.22055 -14.77067,32.99122 -32.99122,32.99122c-18.22055,0 -32.99122,-14.77067 -32.99122,-32.99122z" fill="#ffffff" stroke-width="0"/><path d="M212.6388,180c0,-15.87819 12.87181,-28.75 28.75,-28.75c15.87819,0 28.75,12.87181 28.75,28.75c0,15.87819 -12.87181,28.75 -28.75,28.75c-15.87819,0 -28.75,-12.87181 -28.75,-28.75z" fill="url(#color-1)" stroke-width="0"/><path d="M270.42504,166.60627c2.14373,1.28624 0.85749,3.42997 0.85749,3.42997l-1.24747,1.8452c-1.53942,1.33403 -3.2482,2.4846 -5.03374,3.46506c-10.95113,2.25383 -22.42766,-2.19228 -32.18775,-6.83954c-3.3534,-1.59672 -6.8152,-3.3153 -9.8687,-5.46611c-2.42855,-1.71061 -2.01976,-2.45337 -5.06757,-2.2966c0,0 1.20688,0 1.20688,-2.5c0,-2.5 1.5115,-1.01725 1.5115,-1.01725c1.25053,0.03855 -1.14707,-2.24207 0.04472,-1.86134c3.31812,1.06001 6.1045,4.61299 9.32184,6.12653c9.97473,4.69242 21.82265,11.34919 33.31404,9.16131c1.2455,-0.70549 2.39453,-1.58606 3.46626,-2.53494l0.25253,-0.6548c0,0 1.28624,-2.14373 3.42997,-0.85749z" fill="#ffffff" stroke-width="0.5"/><path d="M249.10478,190.589c0.411,2.46598 -2.05499,2.87698 -2.05499,2.87698l-1.911,0.28402c-12.53834,-0.01232 -24.85492,-5.37584 -35.50968,-11.59055c0,0 -2.15945,-1.25968 -0.89977,-3.41912c1.25968,-2.15945 3.41912,-0.89977 3.41912,-0.89977c9.86841,5.7571 21.35792,10.92196 32.99032,10.90945l1.089,-0.21598c0,0 2.46598,-0.411 2.87698,2.05499z" fill="#ffffff" stroke-width="0.5"/><path d="M253.1388,201.75c-2.5,0 -2.5,-2.5 -2.5,-2.5l0.22342,-3.53304c2.14777,-2.11338 4.37443,-3.8742 6.63032,-5.8484c0.2998,-0.26236 0.5667,-0.57903 0.84663,-0.87426c-0.42264,-0.27696 -0.82796,-0.60346 -1.25186,-0.8598c-2.83239,-1.71276 -5.39423,-2.90935 -8.53935,-4.03015c0,0 -2.35435,-0.84084 -1.51351,-3.1952c0.84084,-2.35435 3.1952,-1.51351 3.1952,-1.51351c4.12434,1.47601 7.65125,3.31328 11.38104,5.551c1.32798,0.79673 3.67837,0.91796 3.95226,2.44219c0.30668,1.70673 -1.66225,3.05976 -2.71618,4.43678c-1.7897,2.33836 -4.97361,4.36468 -7.43138,5.95743l0.22342,1.46696c0,0 0,2.5 -2.5,2.5z" fill="#ffffff" stroke-width="0.5"/></g></g></svg><!--rotationCenter:31.75559611778567:33.23834768748796--> </svg>
+        <!-- Custom Search Engine -->
+        <script async src="https://cse.google.com/cse.js?cx=207c126b3395940fe"></script>
+        <div class="gcse-search"></div>
+        <!-- End of Custom Search Engine -->
+    </div>
 
-<div class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">FAQs</a>
-    <a href="#">Contact</a>
-</div>
-
-<div class="container">
-   
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.98244" height="65.98244" viewBox="0,0,65.98244,65.98244"><defs><linearGradient x1="241.3888" y1="151.25" x2="241.3888" y2="208.75" gradientUnits="userSpaceOnUse" id="color-1"><stop offset="0" stop-color="#00b5ff"/><stop offset="1" stop-color="#0083ff"/></linearGradient></defs><g transform="translate(-208.2444,-146.76165)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill-rule="nonzero" stroke="none" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M208.2444,179.75287c0,-18.22055 14.77067,-32.99122 32.99122,-32.99122c18.22055,0 32.99122,14.77067 32.99122,32.99122c0,18.22055 -14.77067,32.99122 -32.99122,32.99122c-18.22055,0 -32.99122,-14.77067 -32.99122,-32.99122z" fill="#ffffff" stroke-width="0"/><path d="M212.6388,180c0,-15.87819 12.87181,-28.75 28.75,-28.75c15.87819,0 28.75,12.87181 28.75,28.75c0,15.87819 -12.87181,28.75 -28.75,28.75c-15.87819,0 -28.75,-12.87181 -28.75,-28.75z" fill="url(#color-1)" stroke-width="0"/><path d="M270.42504,166.60627c2.14373,1.28624 0.85749,3.42997 0.85749,3.42997l-1.24747,1.8452c-1.53942,1.33403 -3.2482,2.4846 -5.03374,3.46506c-10.95113,2.25383 -22.42766,-2.19228 -32.18775,-6.83954c-3.3534,-1.59672 -6.8152,-3.3153 -9.8687,-5.46611c-2.42855,-1.71061 -2.01976,-2.45337 -5.06757,-2.2966c0,0 1.20688,0 1.20688,-2.5c0,-2.5 1.5115,-1.01725 1.5115,-1.01725c1.25053,0.03855 -1.14707,-2.24207 0.04472,-1.86134c3.31812,1.06001 6.1045,4.61299 9.32184,6.12653c9.97473,4.69242 21.82265,11.34919 33.31404,9.16131c1.2455,-0.70549 2.39453,-1.58606 3.46626,-2.53494l0.25253,-0.6548c0,0 1.28624,-2.14373 3.42997,-0.85749z" fill="#ffffff" stroke-width="0.5"/><path d="M249.10478,190.589c0.411,2.46598 -2.05499,2.87698 -2.05499,2.87698l-1.911,0.28402c-12.53834,-0.01232 -24.85492,-5.37584 -35.50968,-11.59055c0,0 -2.15945,-1.25968 -0.89977,-3.41912c1.25968,-2.15945 3.41912,-0.89977 3.41912,-0.89977c9.86841,5.7571 21.35792,10.92196 32.99032,10.90945l1.089,-0.21598c0,0 2.46598,-0.411 2.87698,2.05499z" fill="#ffffff" stroke-width="0.5"/><path d="M253.1388,201.75c-2.5,0 -2.5,-2.5 -2.5,-2.5l0.22342,-3.53304c2.14777,-2.11338 4.37443,-3.8742 6.63032,-5.8484c0.2998,-0.26236 0.5667,-0.57903 0.84663,-0.87426c-0.42264,-0.27696 -0.82796,-0.60346 -1.25186,-0.8598c-2.83239,-1.71276 -5.39423,-2.90935 -8.53935,-4.03015c0,0 -2.35435,-0.84084 -1.51351,-3.1952c0.84084,-2.35435 3.1952,-1.51351 3.1952,-1.51351c4.12434,1.47601 7.65125,3.31328 11.38104,5.551c1.32798,0.79673 3.67837,0.91796 3.95226,2.44219c0.30668,1.70673 -1.66225,3.05976 -2.71618,4.43678c-1.7897,2.33836 -4.97361,4.36468 -7.43138,5.95743l0.22342,1.46696c0,0 0,2.5 -2.5,2.5z" fill="#ffffff" stroke-width="0.5"/></g></g></svg><!--rotationCenter:31.75559611778567:33.23834768748796-->
-    </svg>
-    <!-- Custom Search Engine -->
-    <script async src="https://cse.google.com/cse.js?cx=207c126b3395940fe"></script>
-    <div class="gcse-search"></div>
-    <!-- End of Custom Search Engine -->
-</div>
-
-<div class="footer" id="footer">
-    <a href="/info/how-search-works.html">How Search Works</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Service</a>
-    <a href="#">About Us</a>
-    <a href="#">Contact Us</a>
-    <!-- You can add more links here -->
-</div>
-
-<button class="show-hide-btn" onclick="toggleFooter()">Toggle Footer</button>
-
-<script>
-function toggleFooter() {
-    var footer = document.getElementById("footer");
-    if (footer.style.display === "none" || footer.style.display === "") {
-        footer.style.display = "block";
-    } else {
-        footer.style.display = "none";
-    }
-}
-</script>
-
+    <script>
+        function toggleFooter() {
+            var footer = document.querySelector(".footer");
+            if (footer.style.display === "none" || footer.style.display === "") {
+                footer.style.display = "block";
+            } else {
+                footer.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
